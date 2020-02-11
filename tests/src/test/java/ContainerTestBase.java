@@ -17,7 +17,7 @@ public abstract class ContainerTestBase {
 
         logger.info("Tested Docker image tag: {}", dockerImageTag);
 
-        _container = new GenericContainer<>(System.getProperty("image_tag", dockerImageTag))
+        _container = new GenericContainer<>(dockerImageTag)
                 .waitingFor(Wait.forHealthcheck());
 
         _container.start();
