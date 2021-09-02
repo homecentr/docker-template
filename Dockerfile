@@ -1,1 +1,1 @@
-FROM homecentr/base:3.1.1-alpine
+FROM homecentr/base:3.2.0-alpine
